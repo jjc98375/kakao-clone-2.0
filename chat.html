@@ -11,79 +11,161 @@
     <title>Settings | Kakao Clone</title>
   </head>
   <body class="chats-body">
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:54</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <a href="index.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <h1 class="header__title">Young Josh</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left"></i>
-        </a>
 
-        <h1 class="header__title">Best Friend</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
     <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Friday, January 11, 2020</span>
         <li class="incoming-message message">
-          <img src="images/avatar.jpg" class="m-avatar message" />
+          <img src="images/young.jpeg" class="c-avatar" />
           <div class="message__content">
-            <span class="message__author">
-              Best Friend
+            <span class="message__bubble">
+              Hey, How's your college?
             </span>
-            <div class="message__bubble">
-              Congrats! I love you!
-            </div>
+            <span class="message__author">
+              Young Josh
+            </span>
           </div>
           <span class="message__timestamp"></span>
         </li>
         <li class="sent-message message">
           <span class="message__timestamp"></span>
           <div class="message__content">
-            <div class="message__bubble">
-              Thank You! See you soon
-            </div>
+            <span class="message__bubble">
+              It's going bad.
+            </span>
           </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              Hbu? what you up to in this night?
+            </span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/young.jpeg" class="c-avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              Studying SAT for tmr. What should I study?! I know I'm not
+              prepared, but I don't know what subject should I study at this
+              point.
+            </span>
+            <span class="message__author">
+              Young Josh
+            </span>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              Bro, just chill. You got time.
+            </span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              Just do your best and make sure you study hard only for the SAT in
+              this following summer. Do not attempt yourself to change to ACT or
+              study SAT2.
+            </span>
+          </div>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              Focus on SAT. That's it.
+            </span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/young.jpeg" class="c-avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              K....Thanks for your advice.
+            </span>
+            <span class="message__author">
+              Young Josh
+            </span>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/young.jpeg" class="c-avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              Shit. I should go to sleep. It's already 11.
+            </span>
+            <span class="message__author">
+              Young Josh
+            </span>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">
+              OK
+            </span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/young.jpeg" class="c-avatar" />
+          <div class="message__content">
+            <span class="message__bubble">
+              Good night!
+            </span>
+            <span class="message__author">
+              Young Josh
+            </span>
+          </div>
+          <span class="message__timestamp"></span>
         </li>
       </ul>
     </main>
-    <div class="chat__write">
-      <div class="chat__write-column">
-        <i class="far fa-plus-square"></i>
-      </div>
-      <div class="chat__write-column">
-        <input
-          type="text"
-          placeholder="Send message"
-          class="chat__write-input"
-        />
-      </div>
-      <div class="chat__write-column">
-        <span class="chat__write-icon">
-          <i class="far fa-smile-wink"></i>
-        </span>
-        <span class="chat__write-icon">
-          <i class="fas fa-microphone"></i>
-        </span>
-      </div>
+    <div class="chat__write-container">
+      <input
+        class="chat__write"
+        type="text"
+        placeholder="Send message"
+        class="chat__write-input"
+      />
     </div>
   </body>
 </html>
